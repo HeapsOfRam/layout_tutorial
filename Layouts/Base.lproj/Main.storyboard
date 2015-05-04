@@ -36,21 +36,72 @@
                                     <segment title="Second"/>
                                 </segments>
                             </segmentedControl>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jUY-hc-Gce">
+                                <rect key="frame" x="25" y="103" width="550" height="332"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                </variation>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Centered" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6u-18-LAt">
+                                <rect key="frame" x="265" y="74" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="n1u-Ap-gdg">
+                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8I6-fd-sEE" secondAttribute="bottom" constant="20" id="2hp-H0-L2z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jUY-hc-Gce" secondAttribute="trailing" constant="9" id="5LT-Nl-QLW"/>
+                            <constraint firstItem="jUY-hc-Gce" firstAttribute="top" secondItem="e90-us-aF8" secondAttribute="bottom" constant="43" id="GrR-wL-xtq"/>
+                            <constraint firstItem="n1u-Ap-gdg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="9" id="JS6-u6-1Nq"/>
+                            <constraint firstItem="8I6-fd-sEE" firstAttribute="top" secondItem="jUY-hc-Gce" secondAttribute="bottom" constant="117" id="LDm-7e-gG4">
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
+                            <constraint firstItem="n1u-Ap-gdg" firstAttribute="top" secondItem="jUY-hc-Gce" secondAttribute="bottom" constant="82" id="RuU-dE-epk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="e90-us-aF8" secondAttribute="trailing" constant="9" id="SjM-hi-DID"/>
+                            <constraint firstItem="d6u-18-LAt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="54" id="StJ-HR-amy"/>
                             <constraint firstItem="8I6-fd-sEE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="9" id="XXa-9E-6RB"/>
+                            <constraint firstAttribute="centerX" secondItem="d6u-18-LAt" secondAttribute="centerX" constant="-0.5" id="aFA-ji-WGC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8I6-fd-sEE" secondAttribute="trailing" constant="9" id="c70-GA-5wV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="n1u-Ap-gdg" secondAttribute="trailing" constant="9" id="olp-km-Nvw"/>
                             <constraint firstItem="Mz6-RR-BLf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="p0e-Xg-bO2"/>
                             <constraint firstItem="Mz6-RR-BLf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="9" id="qzc-Tv-6lh"/>
+                            <constraint firstItem="jUY-hc-Gce" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="9" id="tkE-W9-S45"/>
                             <constraint firstItem="e90-us-aF8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="z0Q-OH-Grd"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="n1u-Ap-gdg"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="JS6-u6-1Nq"/>
+                                <exclude reference="RuU-dE-epk"/>
+                                <exclude reference="olp-km-Nvw"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="n1u-Ap-gdg"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="JS6-u6-1Nq"/>
+                                <include reference="RuU-dE-epk"/>
+                                <include reference="olp-km-Nvw"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138.75" y="135.75"/>
         </scene>
     </scenes>
 </document>
